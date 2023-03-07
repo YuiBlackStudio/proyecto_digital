@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios - Nuevos elementos en HTML5</title>
+</head>
+<body>
+<section>
+    <form id="id_elementosform" name="elementos" action="" method="post">
+        <label for="file24">File progress:</label>
+        <progress id="file24" max="100" value="70"> 70%</progress>
+        <hr/>
+        <br/>
+        <label for="id_fecha">Seleccione fecha:</label><br/>
+        <input type="date" id="id_fecha" name="fecha">
+        <hr/>
+        <br/>
+        <label for="id_tiempolocal">Selecciones fecha y hora (local):</label><br/>
+        <input type="datetime-local" id="id_tiempolocal" name="tiempo local">
+        <hr/>
+        <br/>
+        <label for="id_mes">Seleccione mes:</label><br/>
+        <input type="month" id="id_mes" name="mes">
+        <hr/>
+        <br/>
+        <label for="id_micolor">Seleccione color:</label><br/>
+        <input type="color" id="id_micolor" name="micolor">
+        <hr/>
+        <br/>
+        <label for="id_email">Teclee email:</label>
+        <input type="email" id="id_email" name="email" placeholder="Teclee el correo electrónico">
+        <hr/>
+        <br/>
+        <label for="phone">Teclee el número de teléfono fijo:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+               required><br/>
+        <small>Format: 123-456-789</small>
+        <hr/>
+        <br/>
+        <!-- el elemento de "search" tiene un tratamiento especial, que se verá más adelante.-->
+        <label for="id_busquedas">Tema para buscar:</label>
+        <input type="search" id="id_busquedas" name="busquedas">
+        <hr/>
+        <br/>
+        <label for="id_rangovalores">Numero de billetes:</label><br/>
+        <input type="range" id="id_rangovalores" min="0" max="10" name="rangovalores" step="1" value="2">
+        <br/>
+        <p>Audio setting:</p>
+        <div>
+            <input type="range" id="volume" name="volume" min="0" max="11">
+            <label for="volume">Volumen</label>
+        </div>
+        <hr/>
+        <br/>
+        <label for="id_numeros">Cantidad de viajeros:</label>
+        <input type="number" id="id_numeros" min="-10" max="10" name="numeros" step="2">
+    </form>
+</section>
+</body>
+</html>

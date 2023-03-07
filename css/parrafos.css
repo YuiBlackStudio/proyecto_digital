@@ -1,0 +1,5 @@
+/* cambiar el estilo y alineación a los párrafos */
+p {
+    font-style: italic;
+    text-align: justify;
+}

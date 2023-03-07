@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctica - Cuestionario de Cine</title>
+</head>
+<body>
+<header><h1>Cuestionario de Cine</h1></header>
+<section>
+    <form id="formulario_cine2" method="post" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="id_nombre">Nombre:</label>
+            <input type="text" name="nombre" id="id_nombre" value="Escriba su nombre aquí">
+            <br/><br/>
+            <label for="id_apellido">Apellido:</label>
+            <input type="text" name="apellido" id="id_apellido" placeholder="Escriba su apellido aquí">
+            <br/><br/>
+            <label for="id_dni">DNI:</label>
+            <input type="text" name="dni" id="id_dni" value="">
+            <br/><br/>
+            <label for="id_edad">Edad:</label>
+            <input type="number" name="edad" id="id_edad" value="">
+            <br/><br/>
+            <label for="sexo">Sexo:</label>
+            <input id="sexo" list="generos" name="sexo" value="...">
+            <datalist id="generos">
+                <option value="mujer"></option>
+                <option value="hombre"></option>
+                <option value="otros"></option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Mejor Película</legend>
+            <input type="radio" id="id_pelicula1" name="Películas"><label for="id_pelicula1">Centauros del
+            desierto</label><br/>
+            <input type="radio" id="id_pelicula2" name="Películas"><label for="id_pelicula2">El hombre que mató aLiberty
+            Valance</label><br/>
+            <input type="radio" id="id_pelicula3" name="Películas"><label for="id_pelicula3">Río Rojo</label><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona las películas que has visto</legend>
+            <input type="checkbox" id="id_film1" name="Films"><label for="id_film1">La ventana indiscreta</label><br/>
+            <input type="checkbox" id="id_film2" name="Films"><label for="id_film2">Marny la ladrona</label><br/>
+            <input type="checkbox" id="id_film3" name="Films"><label for="id_film3">El chico</label><br/>
+            <input type="checkbox" id="id_film4" name="Films"><label for="id_film4">Una noche en la opera</label><br/>
+            <input type="checkbox" id="id_film5" name="Films"><label for="id_film5">Intolerancia</label><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Argumento de tu película preferida</legend>
+            <label for="cuadro"></label>
+            <textarea name="cuadro" id="cuadro" cols="50" rows="10"></textarea>
+        </fieldset>
+      <br/>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </div>
+    </form>
+</section>
+</body>
+</html>

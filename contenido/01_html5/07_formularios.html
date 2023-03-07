@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Formularios</title>
+</head>
+<body>
+<header><h1>Elementos de formularios en HTML5</h1></header>
+<section>
+    <h2>Elemento: input text</h2>
+    <form id="formulario_1" method="post" action="">
+        <label for="id_nombre">Nombre:</label>
+        <input type="text" name="nombre" id="id_nombre" value="Escriba su nombre aquí">
+        <br/><br/>
+        <label for="id_apellido">Apellido:</label>
+        <input type="text" name="apellido" id="id_apellido" placeholder="Escriba su apellido aquí">
+        <br/><br/>
+        <label for="idioma">Seleccione un idioma:</label>
+        <input id="idioma" list="idiomas" name="idioma">
+        <datalist id="idiomas">
+            <option value="Inglés"></option>
+            <option value="Francés"></option>
+            <option value="Alemán"></option>
+            <option value="Español"></option>
+        </datalist>
+        <br/><br/>
+        <h3>Otro ejemplo de input desplegable:</h3>
+        <label for="list_idiomas">Sugerencia de idioma: &nbsp; &nbsp; &nbsp;</label>
+        <input id="list_idiomas" list="sugerencias">
+        <datalist id="sugerencias">
+            <option label="Es" value="Español"></option>
+            <option label="En" value="Inglés"></option>
+            <option label="Fr" value="Francés"></option>
+        </datalist>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <input type="image" src="../../images/icono_youtube.png" alt="Botón del pánico" onclick="msgExit()">
+        <input type="button" value="Saludar" onclick="msg()">
+        <script>
+            function msg() {
+                alert("¡Hola!");
+            }
+
+            function msgExit() {
+                alert("¡Salida!");
+            }
+        </script>
+        <br/>
+        <hr/>
+        <h3>type: radios</h3>
+        <fieldset>
+            <legend>Seleccione opción:</legend>
+            <input type="radio" id="gm" name="Grado"><label for="gm">Grado Medio</label><br/>
+            <input type="radio" id="gs" name="Grado" checked><label for="gs">Grado Superior</label>
+        </fieldset>
+        <br/>
+        <hr/>
+        <br/>
+        <fieldset>
+            <legend>Seleccione tipo de transporte:</legend>
+            <input type="checkbox" id="vehiculo1" name="vehiculo1" value="Bicicleta" checked>
+            <label for="vehiculo1"> Bicicleta</label><br/>
+            <input type="checkbox" id="vehiculo2" name="vehiculo2" value="Moto" checked>
+            <label for="vehiculo2"> Moto</label>
+            <input type="checkbox" id="vehiculo3" name="vehiculo3" value="Auto">
+            <label for="vehiculo3"> Auto</label>
+        </fieldset>
+        <br/>
+        <hr/>
+        <br/>
+        <label for="id_clave">Teclee password:</label>
+        <input id="id_clave" name="clave" type="password" value="Escriba su nombre aquí">
+        <br/>
+        <br/>
+        <hr/>
+        <br/>
+        <div>
+            <label for="file">Selecciones los elementos para enviar</label><br/>
+            <input type="file" id="file" name="file" value="100" multiple accept=".jpg, .jpeg, .png, .pdf">
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+        <div>
+            <input type="button" value="Enviar"><br/>
+            <button id="bt1" name="name1">Enviar</button>
+            <button name="btn_enviar" type="button">Click para enviar</button>
+        </div>
+    </form>
+    <br/>
+    <hr/>
+    <br/>
+    <form id="formulario2" method="post" action="">
+        <label for="id_provincia">Seleccione la provincia:</label>
+        <select name="provincia" id="id_provincia">
+            <option value="AB">Albacete</option>
+            <option value="CR">Ciudad Real</option>
+            <option value="CU">Cuenca</option>
+        </select>
+    </form>
+    <br/>
+    <hr/>
+    <br/>
+    <label for="id_paises">Selección de País:</label><br/>
+    <select name="paises" id="id_paises">
+    <optgroup label="Europa">
+    <option value="españa" selected>España</option>
+    <option value="francia">Francia</option>
+    <option value="italia">Italia</option>
+    <option value="alemania">Alemania</option>
+    </optgroup>
+    <optgroup label="America">
+        <option value="eeuu">EEUU</option>
+        <option value="cuba">CUBA</option>
+        <option value="chile">Chile</option>
+        <option value="colombia">Colombia</option>
+    </optgroup>
+    </select>
+</section>
+</body>
+</html>
