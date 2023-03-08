@@ -7,11 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS - Selectores</title>
     <style>
-section ul>li.box{
-    border-top-color: red;
-    border-top-width: 4px;
-    border-top-style: solid;
-}
+        div.box p {
+            color: #1a6e6e;
+            font-weight: bold;
+        }
+
+        section ul > li {
+            border-top-color: red;
+            border-top-width: 5px;
+            border-top-style: solid;
+        }
+
+        article > h1 + p {
+            color: #dddddd;
+            background-color: #3b3b3b;
+            padding: 10px;
+        }
+
+        #art2 p {
+            color: #dddddd;
+            background-color: #1a6e6e;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
