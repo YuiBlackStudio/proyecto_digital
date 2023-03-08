@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/ejemplo3.css">
+    <title>CSS Modelo de caja</title>
+    <style>
+/* Caja verde: height: 200px*/
+article {
+    background-color: #d7cfcf;
+    width: auto;
+    height: 200px;
+    border: #0fa231 15px solid;
+    padding: 50px;
+    overflow: scroll;
+}
+p>span#boton_css {
+    color: #4a4adc;
+}
+p>span#boton_html {
+    color: #b00db0;
+}
+    </style>
+</head>
+<body>
+<section>
+    <h2>Demonstrating the <a class="boton_rojo" href="https://google.com" target="_blank">Box Model</a></h2>
+
+    <p>The <span id="boton_css">CSS</span> box model is essentially a box that wraps around every <span id="boton_html">HTML</span> element.
+        It consists of: borders, padding, margins, and the actual content.</p>
+
+    <article><p>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+        <p>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+    </article>
+</section>
+</body>
+
+
+</html>

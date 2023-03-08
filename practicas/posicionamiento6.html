@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		section {
+			position: relative;
+			border: 1px solid;
+			width: auto;
+			height: 800px;
+		}
+		h2 {
+			font-size: 16px;
+			padding-left: 10px;
+		}
+		div#uno {
+			position: absolute;
+			top: 30px;
+			left: auto;
+			z-index: 1;
+		}
+		div#dos {
+			position: absolute;
+			top: 70px;
+			left: 40px;
+			z-index: 2;
+		}
+		div#tres {
+			position: absolute;
+			top: 110px;
+			left: 80px;
+			z-index: 3;
+		}
+		div#cuatro {
+			position: absolute;
+			top: 150px;
+			left: 120px;
+			z-index: 4;
+		}
+		#uno:hover {
+			z-index: 5;
+		}
+		#dos:hover {
+			z-index: 5;
+		}
+		#tres:hover {
+			z-index: 5;
+		}
+		#cuatro:hover {
+			z-index: 5;
+		}
+	</style>
+</head>
+<body>
+<section>
+	<article id="ejercicio1">
+		<h2>Propiedad display: z-index</h2>
+		<div id="uno"><figure><img src="../images/rey1.png" alt=""></figure></div>
+		<div id="dos"><figure><img src="../images/rey2.png" alt=""></figure></div>
+		<div id="tres"><figure><img src="../images/rey3.png" alt=""></figure></div>
+		<div id="cuatro"><figure><img src="../images/rey4.png" alt=""></figure></div>
+	</article>
+
+</section>
+</body>
+</html>
+
