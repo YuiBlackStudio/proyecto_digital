@@ -16,6 +16,10 @@ p {
     font-size: 13px;
 }
 
+a:hover {
+    background-color: #ffffff;
+}
+
 img {
     border: #4b4b4b 2px solid;
     margin: 20px;
