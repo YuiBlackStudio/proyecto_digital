@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="imagenes/png" href=""/>
+    <title>Navigation menu</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* para que el navegador desborde el espacio y se muestre hasta el final del contenedor*/
+            background-color: #3b3b3b;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block; /* para poder darle el alto y el ancho*/
+            color: #dddddd;
+            text-decoration: none;
+            background-color: #3b3b3b;
+            padding: 20px;
+        }
+
+        a:hover {
+            background-color: #000000;
+            color: #d7cfcf;
+        }
+
+        .active {
+            background-color: #e80606;
+        }
+
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Navigation menu</h1>
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</header>
+<section></section>
+<br/><br/>
+<footer>
+    <details>
+        <summary> &copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="imagenes/png" href=""/>
+    <title>Position</title>
+    <style>
+        * {
+            user-select: none; /* para que no se pueda seleccionar y copiar el texto */
+        }
+
+        div.container {
+            color: #dddddd;
+            position: relative; /* permite que sea el "padre" de los selectores en posición "absolute" */
+        }
+
+        div.topleft {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        div.topright {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        div.center {
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            width: 100%;
+        }
+
+        div.bottomleft {
+            position: absolute;
+            bottom: 10px;
+            left: 5px;
+        }
+
+        div.bottomright {
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+        }
+
+        img.responsive {
+            width: 100%;
+            height: auto;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Position</h1>
+</header>
+<section>
+    <h2>Image Text</h2>
+    <p>Add some text to an image in the top left corner:</p>
+    <div class="container">
+        <img class="responsive" src="../../images/pexels-igor-mashkov-6325003.jpg" alt="Cinque Terre"/>
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Centered</div>
+    </div>
+</section>
+<footer>
+    <details>
+        <summary>&copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+
+</footer>
+</body>
+</html>
