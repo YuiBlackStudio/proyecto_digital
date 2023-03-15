@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="imagenes/png" href="">
+    <title>Grid of Boxes</title>
+    <style>
+        * {
+            /* la propiedad de CSS "box-sizing" nos permite incluir el relleno y el borde en el ancho y alto total de un elemento.
+            "Border-box": Las propiedades width y height incluyen el contenido, relleno y borde, pero no incluye el margen.*/
+            box-sizing: border-box;
+        }
+        .box {
+            float: left;
+            width: 33%;
+            padding: 5px;
+            *background-color: #c47c7c;
+        }
+        .clearfix::after {
+            content: url("../../images/icono_youtube.png");
+            clear: both;
+            display: table;
+            /* "display": especifica el comportamiento de visualización
+            (el tipo de cuadro de representación) de un elemento.
+            "display:table": Estos elementos se comportan como elementos HTML <table>.
+            Define un cuadro a nivel de bloque*/
+        }
+        .color1 {background-color: #c59595
+        }
+        .color2 {background-color: #c27474
+        }
+        .color3 {background-color: #c26565
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        figure {
+            border: thin #146767 solid;
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            max-width: 220px;
+            margin: auto;
+        }
+        figcaption {
+            background-color: #000000;
+            color: #ffffff;
+            font: italic smaller sans-serif;
+            padding: 3px;
+            text-align: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        Grid of Boxes
+    </h1>
+</header>
+<section>
+    <p>Float boxes side by side</p>
+    <article class="clearfix">
+        <div class="box color1"> <!-- se pueden poner dos valores para dos "class" diferentes en el atributo "class"-->
+            <p>Some text inside the box</p>
+            <figure>
+                <img src="../../images/pexels-tina-simakova-12562959.jpg" alt="uno">
+                <figcaption>Imagen 1</figcaption>
+            </figure>
+        </div>
+        <div class="box color2">
+            <p>Some text inside the box</p>
+            <figure>
+                <img src="../../images/pexels-q-hưng-phạm-15748310.jpg" alt="dos">
+                <figcaption>Imagen 2</figcaption>
+            </figure>
+        </div>
+        <div class="box color3">
+            <p>Some text inside the box</p>
+            <figure>
+                <img src="../../images/pexels-zhang-kaiyv-6819588.jpg" alt="tres">
+                <figcaption>Imagen 3</figcaption>
+            </figure>
+        </div>
+    </article>
+    <p>
+        Note that will also use the clearfix hack to take care of the layout
+        flow, and that add the box-sizing property to male sure that the box
+        doesn´t break due to extra padding. Try to remove this code to see the
+        effect.
+    </p>
+    <p>
+        What is box-sizing? you can easily create three floating boxes side by
+        side. However, when you add something that enlarges the width of each
+        box (e.g. padding or borders), the box will break. The box-sizing
+        property allows us to include the padding and border in the box´s
+        total width (and height), making sure that the paddin go stays inside
+        of the box and that it does not break.
+    </p>
+</section>
+<footer>
+    <details>
+        <summary> &copy; Instituto Tame</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+</footer>
+</body>
+</html>
