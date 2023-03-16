@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>links</title>
+    <style>
+        p::first-line {
+            color: #1a6e6e;
+            font-variant: small-caps;
+        }
+
+        /* p.intro::first-letter {
+            color: #4a4adc;
+            font-size: 150px;
+            font-weight: bold;
+        } */
+        @font-face {
+            font-family: aerotis;
+            src: url("../fonts/Aerotis.ttf");
+            font-size: 25px;
+        }
+
+        p.myfont_aerotis::first-letter {
+            font-family: aerotis, Serif;
+            color: #79156e;
+
+            font-size: 70px;
+            font-weight: bolder;
+        }
+
+        p.intro_verde::first-letter {
+            color: #1a6e6e;
+            font-size: 30px;
+        }
+
+        p.multiple::first-line {
+            color: #d39061;
+            text-align: justify;
+        }
+
+        p.myfont_aerotis::first-letter {
+            font-family: aerotis, Serif;
+            color: #bb58b1;
+            font-size: 30px;
+        }
+
+        /* el pseudoelemento "::selection" permite seleccionar o marcar cualquier texto del documento */
+        *::selection {
+            background-color: #caecdf;
+        }
+
+        article {
+            /* define las reglas de estilo del contenedor de los artículos, con el efecto de tridimensionalidad.*/
+            border-left: 3px solid #007399;
+            background-color: #faf8f7;
+            padding: 1px 10px;
+            width: auto;
+            height: auto;
+            box-shadow: 5px 5px 2px #b7b4b4;
+        }
+
+        h3 {
+            font-family: Garamond, Serif;
+            font-weight: bold;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <article>
+        <h3>Primera línea de un párrafo</h3>
+        <p>
+        <p class=myfont_aerotis>You can use the ::first-line pseudo-element to add a special effect to the first line of
+            a text. Some more
+            text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+            more, and more, and more.
+            <wbr>
+            You can use the ::first-line pseudo-element to add a special effect to the
+            first line of a text. Some more
+            text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+            more, and more, and more.
+        </p>
+    </article>
+    <br>
+    <article>
+        <h3>Primera letra de un párrafo</h3>
+        <p class="multiple">This is an introduction.</p>
+        <p>This is a paragraph with some text. A bit more text even.</p>
+    </article>
+    <article>
+        <h3>Pseudoelementos y clases</h3>
+        <p class="intro_verde"> Mouse over the links and watch them change layout: </p>
+
+    </article>
+    <article>
+        <h3>Pseudoelementos y clases</h3>
+        <p class="multiple myfont_aerotis">You can combine the ::first-letter and ::first-line pseudo-elements to add a
+            special effect
+            to the first letter and the first line of a text!</p>
+
+    </article>
+</section>
+</body>
+</html>

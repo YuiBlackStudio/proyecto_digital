@@ -5,25 +5,78 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fuentes de Google</title>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> -->
-    <title>Fuentes de Google</title>
     <style>
+        /* Direccionamiento desde CSS*/
         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-        * {
+
+        p.font_google {
             font-family: 'Libre Baskerville', serif;
             font-size: 14px;
+            color: #1a6e6e;
+        }
+
+        @font-face {
+            font-family: aerotis;
+            src: url("../fonts/Aerotis.ttf");
+            font-size: 25px;
+        }
+
+        h2.myfont_aerotis {
+            font-family: aerotis, Serif;
+            color: #8b689d;
+            text-align: center;
+        }
+
+        p.myfont_aerotis {
+            font-family: aerotis, Serif;
+            color: #3b3b3b;
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        @font-face {
+            font-family: amal;
+            src: url("../fonts/Amal_Script-Bold.ttf");
+            font-weight: bold;
+        }
+
+        h2.myfont_amal {
+            font-family: amal, Serif;
+            color: #a91818;
+            text-align: center;
+        }
+
+        p.myfont_amal {
+            font-family: amal, Serif;
+            color: #c26565;
+            text-align: justify;
+            line-height: 27px; /* propiedad para ajustar el interlñineado en el párrafo */
         }
     </style>
 </head>
 <body>
 <header>
-    <h1>Tipos de fuente de Google</h1>
+    <h1 class="font_google">Tipos de fuente de Google</h1>
+    <p class="font_google">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis eligendi esse
+        illo iste iusto obcaecati officia optio pariatur quae quaerat qui quis quisquam rem, tempore temporibus ullam?
+        Adipisci architecto deleniti dolore earum error esse minus nihil officia rem totam. Accusamus aliquid,
+        asperiores inventore molestias mollitia natus ratione repellat vero. Consectetur culpa doloribus eos repudiandae
+        similique tenetur. Consequatur deserunt, distinctio dolorem eos et impedit itaque officiis quaerat, quisquam quo
+        sapiente velit vitae? Ipsa iste maiores porro quia repudiandae! Accusamus aliquam architecto consequatur
+        debitis, dignissimos doloremque dolorum enim, perferendis quia quibusdam quidem unde vel voluptates! Aliquam
+        culpa deserunt dolorum error nam quas sint! Ab animi cum deleniti doloremque doloribus eius eos esse, et ex,
+        fugit hic illum itaque labore laboriosam magni, natus nobis quae quia quisquam quo saepe sapiente sint? Adipisci
+        beatae, culpa cum cupiditate, et hic in, itaque molestias nemo neque nihil provident sunt unde vitae voluptates?
+        Officiis, tenetur, voluptatem?</p>
 </header>
 <section>
     <div>
-        <p>
+        <h2 class="myfont_aerotis">Mis fuentes (prueba 1)</h2>
+        <p class="myfont_aerotis">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores esse expedita inventore ipsam
             nulla officia sapiente? Accusamus autem beatae, debitis doloribus enim esse eum fuga fugiat ipsum magnam
             magni necessitatibus, nemo pariatur quam ratione velit voluptate. Accusantium amet necessitatibus ut!
@@ -38,7 +91,8 @@
         </p>
     </div>
     <div>
-        <p>
+        <h2 class="myfont_amal">Mis fuentes (prueba 2)</h2>
+        <p class="myfont_amal">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eaque eligendi, est excepturi facilis illo
             impedit itaque minima officiis possimus reiciendis reprehenderit, similique veniam! Dicta eaque eligendi
             explicabo, impedit, incidunt minus nam necessitatibus nemo nesciunt, officia perferendis quaerat rem sit
