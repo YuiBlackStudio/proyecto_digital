@@ -1,0 +1,63 @@
+/*TEXTO "RESPONSIVE". Reglas para tipografías, sangrado y sombras del texto.*/
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: #f1eded;
+    border-radius: 5px 6px 7px 8px; /* CSS3 */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 15vw;
+    /* Reajusta la ventana del navegador para ver cómo escala los tamaños.*/
+    color: #2e9b9b;
+    background: -webkit-linear-gradient(#1a6e6e, #c41414, #f6c8a9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p.p1 {
+    font-size: 5vw;
+    /* Se debe usar la unidad "vm" cuando se escala el texto. 10vm equivalen a el 10% de el tamaño de vista.
+    La vista del navegador en el tamaño de la ventana. 1vw equivale al 1% del ancho de la ventana;
+    si la vista es de 50cm de ancho, 1vw es 0.5cm.*/
+    line-height: .5em;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+    color: #4b87b9;
+}
+
+p.p2 {
+    font-size: 1.5em;
+    font-family: Garamond, sans-serif;
+    font-style: italic;
+    color: #1a6e6e;
+}
+
+span.negrita {
+    font-weight: bold;
+    color: #c26565;
+    text-transform: uppercase;
+    /* Estilo para modificar la densidad de la fuente. */
+    text-shadow: 1px 2px darkgrey; /* CSS3 */
+}
+
+p.p3::first-line {
+    text-decoration: underline overline;
+    text-transform: capitalize;
+    color: #efba97;
+    /* Regla para decorar la primera línea de un párrafo, en este caso con una línea por arriba y otra por abajo
+    (dos valores para la misma propiedad). */
+}
+
+.texto_degradado {
+    /* Propiedades CSS3 */
+    background: -webkit-linear-gradient(black,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.parrafo_columnas {
+    column-count: 2; /* CSS3 */
+    column-rule: 2px solid #ffffff; /* CSS3 */
+}
