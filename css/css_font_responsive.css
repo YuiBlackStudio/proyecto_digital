@@ -61,3 +61,20 @@ p.p3::first-line {
     column-count: 2; /* CSS3 */
     column-rule: 2px solid #ffffff; /* CSS3 */
 }
+
+.sombreado_redondeado {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #3b3b3b;
+    border-radius: 20px; /* CSS3 */
+    box-shadow: 10px 10px 2px #CCCCCC; /* CSS3 */
+}
+
+.texto_sombreado {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 3px 3px #CCCCCC; /* CSS3*/
+    margin: 20px;
+}

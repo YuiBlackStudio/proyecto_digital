@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3. Border-redondo</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <style>
+       body {
+           background: -webkit-linear-gradient(rgba(120, 123, 239, 0.99), #5f8db2, #efba97);
+       }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px;
+            text-shadow: 3px 3px 4px rgba(24, 42, 58, 0.84);
+        }
+
+        article h2 {
+            column-span: all; /* Esto permite expandir el texto en el ancho de todas las columnas. */
+        }
+
+        article.parrafo_columna {
+            column-count: 4; /* CSS3 */
+            column-rule: 1px solid #ffffff; /* CSS3 */
+            column-width: 140px;
+            /* IMPORTANTE: Esto es lo que hace a las columnas responsive.
+                       Esta propiedad indica el mínimo a la columna cuando cambiemos de pantalla. */
+            padding: 20px;
+            margin: 20px;
+            background-color: #e5e4e4;
+            border-radius: 10px; /* CSS3 */
+            box-shadow: 10px 10px 5px rgba(24, 42, 58, 0.49); /* CSS3 */
+        }
+
+        .img_borde_redondo {
+            display: block;
+            /* El elemento imagen siempre se muestra "inline";
+                       por eso se tiene que mostrar en bloc para que ocupe el ancho total. */
+            border-radius: 20px;
+        }
+
+        .img_columna {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: block;
+            column-span: all; /* IMPORTANTE: Para ocupar el espacio (ancho) de columna. */
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>CSS3. Columnas</h1>
+    <article class="parrafo_columna">
+        <h2>Muestra del libro "El principito"</h2>
+        <p>
+            La historia comienza con el aviador contando que, cuando era niño, dibujó una boa comiéndose un elefante,
+            pero
+            los adultos pensaban que había dibujado un sombrero. Cuando el aviador intentó corregirlos, los adultos le
+            dijeron que dejase de dibujar y se dedicase a algo más productivo, algo que hace que el aviador se lamente
+            de la falta de imaginación de los adultos.
+        </p>
+        <p> De adulto, el aviador, que ahora es piloto, sufre un incidente cuando su avión se avería en el desierto del
+            Sáhara, lejos de todo contacto humano. Mientras intenta arreglar su avión, aparece un niño que el aviador
+            apoda
+            como el principito. El niño le pide al aviador que le dibuje un cordero y este, en su lugar, le enseña su
+            antiguo dibujo de la boa devorando al elefante. Para su sorpresa, el principito entiende el dibujo a la
+            perfección y el aviador decide entonces dibujarle el cordero. Sin embargo, al verse incapaz de dibujarlo,
+            dibuja
+            en su lugar una caja y le dice al principito que el cordero está en el interior de la misma, que solo debe
+            usar
+            su imaginación, y el principito acepta el dibujo.
+        </p>
+        <figure><img class="img_borde_redondo img_columna" src="../images/pexels-cottonbro-studio-7181897.jpg"
+                     alt="Imagen del principito"/></figure>
+        <p>Los días pasan y el aviador sigue intentando reparar su avión, sin éxito. Mientras tanto, el principito le
+            cuenta la historia de cómo llegó a la Tierra. Según cuenta, él procede de un pequeño planeta, el Asteroide
+            B-612, que es poco más grande que una casa y tiene tres pequeños volcanes, uno de ellos inactivo, y gran
+            variedad de plantas. Se pasa el día limpiando los volcanes y quitando algunas semillas de malas hierbas,
+            como
+            las semillas de los árboles baobabs.
+        </p>
+    </article>
+</section>
+</body>
+</html>
