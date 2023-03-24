@@ -12,72 +12,117 @@
     <style>
         * {
             font-family: Garamond, serif;
+            color: #375558;
+            box-sizing: border-box; /*para indicar el "modelo de caja" para el documento.*/
         }
         header {
             background-color: #faf2ee;
             max-width: 100%;
             height: 150px;
             text-align: center;
-            color: #2c2a2a;
-            padding-top: 20px;
+            padding: 15px;
             box-shadow: 5px 5px #CCCCCC;
         }
 
-        nav ul {
+        section {
+            overflow: auto;
+        }
+
+        nav {
+            float: left; /* sobre la estructura se ponen las características de los elementos flotantes*/
+            width: 20%;
+        }
+
+        ul {
             list-style: none;
-            float: left;
-            width: 23%;
-            box-sizing: border-box;
+            margin: 20px 0;
+            padding: 0;
+            width: 100%;
+            background-color: #dfdee8;
+            text-align: left;
         }
 
         li a {
             display: block;
-            background-color: #dfdee8;
-            width: 300px;
+            padding: 14px 16px;
             text-decoration: none;
             color: #2c2a2a;
-            padding: 15px 30px 15px 10px;
         }
 
         li a:hover {
             background-color: #faf2ee;
             color: #2c2a2a;
+            padding: 12px 16px;
+            transition: .8s;
         }
 
-        .box {
+        article {
             float: left;
-            margin-top: 20px;
+            width: 59%;
+            padding: 5px 15px;
             overflow: hidden;
         }
 
-        article.box {
-            display: inline-block;
-            width: 55%;
-            box-sizing: border-box;
-        }
-
-        article.box img {
+        img {
             width: 100%;
             height: auto;
         }
 
-        aside.box {
+        aside {
+            float: left;
+            margin-top: 20px;
             width: 20%;
-            box-sizing: border-box;
+            padding: 10px 15px;
             background-color: #d0dada;
             border-radius: 10px;
             box-shadow: 5px 5px #CCCCCC;
-            padding-left: 15px;
-            padding-bottom: 20px;
         }
 
         footer.box {
             background-color: #858383;
             width: 100%;
-            color: #dddddd;
-            text-align: center;
             padding-bottom: 50px;
             padding-top: 20px;
+        }
+
+        footer.box p {
+            color: #dddddd;
+            text-align: center;
+            font-size: small;
+        }
+
+        aside p {
+            font-size: 1vw;
+        }
+
+@media only screen and (max-width: 800px) {
+    /* For tablets: */
+    article {
+        width: 80%;
+        padding: 10px;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+        @media only screen and (max-width: 500px) {
+            /* For mobiles phones: */
+            body {
+                background-color: #cdcdd7;
+            }
+            nav, article, aside {
+                width: 100%;
+            }
+            li a {
+                /* padding: 8px; */
+                text-decoration: underline black;
+                text-align: center;
+            }
+            /* si se quiere ocultar el aside y que deje libre el hueco que ocupa. */
+            aside {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -113,7 +158,7 @@
         <p>The Walk is free!</p>
     </aside>
 </section>
-<footer class="box"> Instituto Tame
+<footer class="box"> <p>· Responsive CSS3 · Instituto Tame · 2023 ·</p>
 </footer>
 </body>
 </html>
